@@ -3071,10 +3071,10 @@ function Library:CreateWindow(...)
 
         local TabButtonWidth = Library:GetTextBounds(Name, Library.Font, 16);
 
-        local TabButton = Library:Create('Frame', {
+         local TabButton = Library:Create('Frame', {
             BackgroundColor3 = Library.BackgroundColor;
             BorderColor3 = Library.OutlineColor;
-            Size = UDim2.new(0 + 8 + 8, 1, 0);
+            Size = UDim2.new(0, TabButtonWidth + 8 + 4, 1, 0);
             ZIndex = 1;
             Parent = TabArea;
         });
